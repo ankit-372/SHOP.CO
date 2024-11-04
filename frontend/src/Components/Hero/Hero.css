@@ -1,0 +1,342 @@
+@font-face {
+    font-family: neu1;
+    src: url(/src/assets/Integral_CF.otf);
+    font: 700;
+}
+@font-face {
+    font-family: neu2;
+    src: url(/src/assets/Satoshi-Regular.otf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: neu3;
+    src: url(/src/assets/Satoshi-Bold.otf);
+    font-weight: 600;
+}
+
+/* General reset for padding and margins */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: neu2;
+}
+
+.page1 {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    position: relative;
+    height: 100%;
+}
+
+/* Background Image */
+.bg-img-page1 img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -99;
+}
+
+/* Main Content */
+.main-con {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    position: relative;
+    top: 30px;
+    left:-350px;
+}
+
+/* Header Styling */
+.page1-text {
+    margin-bottom: 40px;
+}
+
+.header {
+    font-size: 64px;
+    font-family: neu1;
+    font-weight: bold;
+    line-height: 1.2;
+    color: #000000;
+}
+
+.sub-header {
+    font-size: 16px;
+    font-family: neu2;
+    color: #666;
+    margin-top: 20px;
+    max-width: 600px;
+}
+
+/* Shop Now Button */
+.shop-btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 16px 65px;
+    background-color: #111;
+    color: #fff;
+    line-height: auto;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 62px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.shop-btn:hover {
+    background-color: #333;
+}
+
+/* Info Boxes */
+.page1-boxes {
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    margin-top: 25px;
+    gap: 10px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 0px;
+    border-right:1px solid #d7d1d1;
+    padding: 0px 20px;
+}
+
+.box-right {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 0px;
+    padding: 0px 20px;
+}
+
+.num {
+    font-size: 40px;
+    color: #111;
+    font-family: neu3;
+}
+
+.text {
+    font-size: 16px;
+    color: #666;
+    margin-top: 5px;
+}
+
+/* Stars */
+.big-star, .small-star {
+    position: absolute;
+    z-index:99;
+    color: #000000;
+}
+
+.big-star {
+    top: 22%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+}
+
+.small-star {
+    top: 55%;
+    right: 47%;
+    transform: translate(50%, -50%);
+}
+/* 
+#big-star img, #small-star img {
+    width: 80px;
+    height: 80px;
+    opacity: 0.2;
+} */
+
+.logo{
+    height: 122px;
+    width: 100%;
+    background-color: #000000;
+    z-index: 200;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    }
+
+
+.logo ul{
+    display: flex;
+    list-style: none;
+    gap: 100px;
+}
+
+
+.page2{
+    height: 100vh;
+    width: 90%;
+    margin-left: 5%;
+}
+.page2 .header2{
+    font-size: 48px;
+    font-family: neu1;
+    z-index: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    line-height: auto;
+    letter-spacing: 0;
+    color: #000000;
+}
+
+.page2 ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin-top: 57px;
+    font-family: neu3;
+}
+
+.sale-details{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.product-details{
+    font-size: 20px;
+}
+
+.price{
+    font-size: 24px;
+}
+
+.actual-price{
+    opacity: 0.4;
+}
+
+.discount{
+    color: #FF3333;
+    background-color: #FF333310;
+    font-size: 12px;
+    border-radius: 62px;
+    padding: 6px 14px;
+    margin-top: 2px;
+}
+
+.product-details{
+    margin-top: 12px;
+}
+
+.ratings{
+    margin-top: 10px;
+
+}
+
+.price{
+    margin-top: 10px;
+}
+
+.view-all{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.view-all-btn{
+    border-radius: 62px;
+    padding: 16px 54px;
+    color: #FFFFFF;
+    border:1px solid #000000;
+    background-color: #000000;
+    height: 52px;
+    width: 218px;
+    font-size: 16px;
+    font-family: neu3;
+    cursor: pointer;
+    margin-top: 45px;
+}
+
+.view-all-btn:hover{
+    background-color: #00000090;
+    color: #FFFFFF;
+    border:1px solid #00000090;
+    transition: background-color 0.3s ease;
+}
+
+.line{
+    width: 100%;
+    margin-top: 90px;
+    color: #00000050;
+}
+
+
+.page3{
+    width: 90%;
+    height: 100%;
+    margin-left: 6%;
+    position: relative;
+}
+
+.page3 .header3{
+    font-size: 48px;
+    font-family: neu1;
+    z-index: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 21px;
+    line-height: auto;
+    letter-spacing: 0;
+    color: #000000;
+    margin-bottom: 46px;
+}
+
+.page3 ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin-top: 57px;
+    font-family: neu3;
+}
+
+.header5{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 48px;
+    font-family: neu1;
+    margin-top: 72px;
+}
+
+
+.page4 .main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -55px;
+    height: 100%;
+    position: relative;
+}
+
+.main{
+    width: 90%;
+    height: 53vh;
+    margin-left: 5%;
+    position: relative;
+}
