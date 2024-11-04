@@ -22,7 +22,10 @@ import rating4 from "/src/assets/rating4.svg";
 import Loose_Fit_Bermuda_Shorts from "/src/assets/Loose_Fit_Bermuda_Shorts.svg";
 import rating5 from "/src/assets/rating5.svg";
 import Faded_Skinny_Jeans from "/src/assets/Faded_Skinny_Jeans.svg";
-import page4BgImg from "/src/assets/page4.svg";
+import casual from "/src/assets/Casual.svg";
+import formal from "/src/assets/Formal.svg";
+import party from "/src/assets/Party.svg";
+import GYM from "/src/assets/GYM.svg";
 
 
 
@@ -234,8 +237,16 @@ const Hero = () => {
       {/* page4 starts */}
       <div className="page4">
         <div className="main">
-            <div className="container">
-                <img src={page4BgImg} alt="page4BgImg"/>
+            <div className="container1">
+                BROWSE BY DRESS STYLE
+            </div>
+            <div className="container2">
+              <img src={casual} alt="casual" />
+              <img src={formal} alt="formal" />
+            </div>
+            <div className="container3">
+              <img src={party} alt="party" />
+              <img src={GYM} alt="GYM" />
             </div>
         </div>
      </div>
