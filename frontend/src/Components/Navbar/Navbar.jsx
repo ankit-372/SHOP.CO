@@ -41,7 +41,7 @@ const Navbar = () => {
       </div>
       <div className="icons">
         <div className="personal">
-          <Link style = {{textDecoration:'none',color:'black'}} to='/login'><button>Login</button></Link>
+          <Link style = {{textDecoration:'none',color:'black'}} to='/loginSignUp'><button>Login</button></Link>
         </div>
         <div className="cart">
           <Link style = {{textDecoration:'none',color:'black'}} to='/Cart'><img src={cart_icon} alt="Cart Icon" /></Link>

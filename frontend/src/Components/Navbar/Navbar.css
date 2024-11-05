@@ -33,7 +33,7 @@ body{
     /* border-bottom: 1px solid #eaeaea; */
     margin: 20px 40px;
     height: 48px;
-    gap: 40px;
+    gap: 38px;
     /* background-color: red; */
     /* position: fixed;
     z-index: 500; */
@@ -118,7 +118,7 @@ ul li{
     width: 22px;
     height: 22px;
     margin-top: -30px;
-    margin-left: -53px;
+    margin-left: -55px;
     font-size: 14px;
     border-radius: 11px;
     color: white;
