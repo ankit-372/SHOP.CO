@@ -89,11 +89,26 @@ ul li{
     justify-content: center;
     gap: 40px;
 }
-.cart img, .personal img {
+.cart img{
     width: 24px;
     height: 24px;
     cursor: pointer;
 } 
+
+.personal button{
+    color: #000000;
+    background-color: #f5f5f5;
+    border-radius: 62px;
+    border: 1px solid #eaeaea;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.personal button:hover{
+    background-color: #F0F0F0;
+}
 
 .nav-cart-count{
     display: flex;

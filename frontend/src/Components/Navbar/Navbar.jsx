@@ -2,8 +2,7 @@ import { useState } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 
-import cart_icon from "../assets/cart-icon.svg";
-import personal_icon from "/src/assets/personal-icon.svg";
+import cart_icon from "/src/assets/cart-icon.svg";
 
 const Navbar = () => {
   const [Menu, setMenu] = useState("shop");
@@ -42,7 +41,7 @@ const Navbar = () => {
       </div>
       <div className="icons">
         <div className="personal">
-          <Link style = {{textDecoration:'none',color:'black'}} to='/login'><img src={personal_icon} alt="User Icon" /></Link>
+          <Link style = {{textDecoration:'none',color:'black'}} to='/login'><button>Login</button></Link>
         </div>
         <div className="cart">
           <Link style = {{textDecoration:'none',color:'black'}} to='/Cart'><img src={cart_icon} alt="Cart Icon" /></Link>
