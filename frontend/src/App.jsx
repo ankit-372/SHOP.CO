@@ -6,6 +6,8 @@ import NewArrivals from './Pages/NewArrivals';
 import Brands from './Pages/brands';
 import Cart from './Pages/Cart';
 import LoginSignup from './Pages/LoginSignup';
+import SignUp from './Components/SignUp/SignUp';
+// import Login from './Components/Login/Login';
 
 
 function App() {
@@ -19,6 +21,8 @@ function App() {
           <Route path='/brands' element={<Brands/>} />
           <Route path='/cart' element={<Cart/>} />
           <Route path='/loginSignUp' element={< LoginSignup />} />
+          {/* <Route path='/login' element={< Login />} /> */}
+          <Route path='/signUp' element={< SignUp />} />
         </Routes>
       </BrowserRouter>
     </>
