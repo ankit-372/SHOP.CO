@@ -1,7 +1,8 @@
+/* Import font faces */
 @font-face {
     font-family: neu1;
     src: url(/src/assets/Integral_CF.otf);
-    font: 700;
+    font-weight: 700;
 }
 @font-face {
     font-family: neu2;
@@ -14,42 +15,43 @@
     font-weight: 600;
 }
 
-/* General reset for padding and margins */
+/* Reset styling */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: neu2;
 }
+
+/* Navbar container */
 .nav-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* padding: 15px 30px; */
+    padding: 15px 54px;
     background-color: white;
-    /* border-bottom: 1px solid #eaeaea; */
-    margin: 20px 40px;
-    height: 48px;
-    gap: 38px;
-    /* background-color: red; */
-    /* position: fixed;
-    z-index: 500; */
+    height: 70px;
+    gap: 30px;
+    border-bottom: 1px solid #eaeaea;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
 }
 
 /* Logo */
 .title {
     font-size: 32px;
-    font-weight: bold;
+    font-family: neu1;
     color: #000000;
     letter-spacing: 1px;
-    font-family: neu1;
     margin-top: -8px;
 }
 
-/* Navbar links styling */
+/* Navbar links */
 ul {
     display: flex;
     list-style: none;
@@ -57,79 +59,102 @@ ul {
     font-size: 16px;
 }
 
-ul li{
-    text-decoration: none;
-    color: black;
-    font-size: 16px;
+ul li {
+    font-family: neu2;
     cursor: pointer;
 }
 
-/* Search bar styling */
+ul li a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+ul li a:hover {
+    color: #555; /* Change color on hover for visual feedback */
+}
+
+ul li.active a {
+    font-weight: bold;
+    color: #000; /* Highlight active link */
+}
+
+/* Search bar */
 .search {
     flex-grow: 1;
+    display: flex;
+    justify-content: center;
 }
 
 .search input[type="text"] {
-    padding: 16px 12px;
+    width: 100%;
+    padding: 10px 20px;
     border-radius: 62px;
     border: 1px solid #eaeaea;
     font-size: 16px;
     font-family: neu2;
     background-color: #f5f5f5;
     outline: none;
-    width: 563px;
-    height: 48px;
-    padding-left: 25px;
-}
-
-/* Icon styling */
-.icons{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
-}
-.cart img{
-    width: 24px;
-    height: 24px;
-    cursor: pointer;
-} 
-
-.personal button{
-    color: #000000;
-    background-color: #f5f5f5;
-    border-radius: 62px;
-    border: 1px solid #eaeaea;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-.personal button:hover{
-    background-color: #F0F0F0;
+.search input[type="text"]:focus {
+    background-color: #e9e9e9;
 }
 
-.nav-cart-count{
+/* Icons section */
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Cart icon */
+.cart {
+    position: relative;
+}
+
+.cart img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+/* Cart count badge */
+.nav-cart-count {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: red;
-    width: 22px;
-    height: 22px;
-    margin-top: -30px;
-    margin-left: -55px;
-    font-size: 14px;
-    border-radius: 11px;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
     color: white;
+    position: relative;
+    top: -15px;
+    right: 25px;
+    border-radius: 50%;
+    cursor: pointer;
 }
 
-.selected-indicator {
-        border: none;
-        width: 100%;
-        height: 1px;
-        border-radius: 10px;
-        background-color: #00000070;
-        filter: blur(1px);
+/* Personal login button */
+.Personal button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-family: neu2;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: 1px solid #eaeaea;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #f5f5f5;
+    width: 70px;
 }
 
+.Personal button:hover {
+    background-color: #e0e0e0;
+}

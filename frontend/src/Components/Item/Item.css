@@ -1,0 +1,77 @@
+/* Item.css */
+@font-face {
+    font-family: neu1;
+    src: url(/src/assets/Integral_CF.otf);
+    font: 700;
+}
+@font-face {
+    font-family: neu2;
+    src: url(/src/assets/Satoshi-Regular.otf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: neu3;
+    src: url(/src/assets/Satoshi-Bold.otf);
+    font-weight: 600;
+}
+.item {
+    width: 298px; /* Adjust width as needed */
+    padding: 16px;
+    border-radius: 12px;
+    background-color: #f8f8f8;
+    text-align: center;
+    font-family: neu3;
+  }
+
+  .item:hover{
+    transform: scale(1.05);
+  }
+  
+  .item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 12px;
+  }
+  
+  .item p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin: 8px 0;
+  }
+  
+  .item .item-prices {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 4px;
+  }
+  
+  .item .item-price-new {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .item .item-price-old {
+    font-size: 16px;
+    text-decoration: line-through;
+    color: #999;
+  }
+  
+  /* Star rating and rating text */
+  /* .item .item-rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4px;
+    color: #FFD700;
+  } */
+  
+  /* .item .item-rating span {
+    font-size: 16px;
+    color: #333; 
+    margin-left: 4px;
+  } */
+  

@@ -1,0 +1,47 @@
+
+  
+ body{
+    font-family: neu2;
+  }
+
+.relatedproducts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    gap: 10px;
+}
+
+.relatedproducts h1 {
+    color: #171717;
+    font-size: 48px;
+    font-family: neu1;
+    margin-bottom:30px;
+}
+
+/* Scrollable area for related products */
+.relatedproducts-scroll {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 1rem 0;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.relatedproducts-scroll::-webkit-scrollbar {
+    height: 8px;
+}
+
+/* .relatedproducts-scroll::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 10px;
+} */
+
+/* Snap each item into place for smooth scrolling */
+.relatedproducts-scroll > * {
+    scroll-snap-align: start;
+    flex: 0 0 auto;
+    width: 280px; /* Adjust based on your design */
+}
